@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>お問い合わせ | Support</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Noto Sans JP', sans-serif;
+      background-color: #f4f6f8;
+      color: #333;
+    }
+
+    header.hero {
+      background: linear-gradient(135deg, #ff9966, #ff5e62);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header.hero h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    header.hero p {
+      font-size: 1.2em;
+      opacity: 0.9;
+    }
+
+    .section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .faq-box, .contact-box {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      padding: 30px;
+      margin-bottom: 30px;
+    }
+
+    .faq-box h2, .contact-box h2 {
+      font-size: 1.5em;
+      margin-bottom: 15px;
+      color: #ff5e62;
+    }
+
+    dl {
+      margin: 0;
+    }
+
+    dt {
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    dd {
+      margin-left: 0;
+      margin-bottom: 10px;
+    }
+
+    ul.contact-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul.contact-list li::before {
+      content: "📧";
+      margin-right: 8px;
+    }
+
+    @media (max-width: 600px) {
+      header.hero h1 {
+        font-size: 2em;
+      }
+
+      .faq-box, .contact-box {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <h1>お問い合わせ・FAQ</h1>
+    <p>ご質問やご相談はお気軽にどうぞ。</p>
+  </header>
+
+  <section class="section">
+    <div class="faq-box">
+      <h2>よくある質問</h2>
+      <dl>
+        <dt>Q. 講座の参加費は？</dt>
+        <dd>A. 基本的に無料ですが、一部有料講座もあります。</dd>
+
+        <dt>Q. オンライン参加は可能ですか？</dt>
+        <dd>A. はい、すべての講座はオンライン対応しています。</dd>
+
+        <dt>Q. 予約後のキャンセルはできますか？</dt>
+        <dd>A. 可能です。前日までにご連絡ください。</dd>
+      </dl>
+    </div>
+
+    <div class="contact-box">
+      <h2>連絡先</h2>
+      <ul class="contact-list">
+        <li>Email: info@example.com</li>
+        <li>Twitter: @circle_name</li>
+        <li>Instagram: @circle_name</li>
+      </ul>
+    </div>
+  </section>
+</body>
+</html>
