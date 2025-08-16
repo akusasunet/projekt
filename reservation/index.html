@@ -1,1 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>予約フォーム | Reservation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Noto Sans JP', sans-serif;
+      background-color: #f0f4f8;
+      color: #333;
+    }
 
+    header.hero {
+      background: linear-gradient(135deg, #ff758c, #ff7eb3);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header.hero h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    header.hero p {
+      font-size: 1.2em;
+      opacity: 0.9;
+    }
+
+    .section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .info-box {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      padding: 30px;
+      margin-bottom: 30px;
+    }
+
+    .info-box h2 {
+      font-size: 1.5em;
+      margin-bottom: 15px;
+      color: #ff758c;
+    }
+
+    .info-box ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .info-box ul li::before {
+      content: "📝";
+      margin-right: 8px;
+    }
+
+    iframe.form,
+    iframe.map {
+      width: 100%;
+      height: 600px;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    @media (max-width: 600px) {
+      header.hero h1 {
+        font-size: 2em;
+      }
+
+      .info-box {
+        padding: 20px;
+      }
+
+      iframe.form,
+      iframe.map {
+        height: 400px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <h1>イベント・講座の予約</h1>
+    <p>以下のフォームからご希望の講座を選んでご予約ください。</p>
+  </header>
+
+  <section class="section">
+    <div class="info-box">
+      <h2>予約の流れ</h2>
+      <ul>
+        <li>講座を選択</li>
+        <li>お名前・メールアドレスを入力</li>
+        <li>送信後、確認メールが届きます</li>
+      </ul>
+    </div>
+
+  <div class="info-box">
+  <h2>予約フォーム</h2>
+  <p>LINE公式アカウントからご予約いただけます。以下のボタンをタップして、LINEで予約を開始してください。</p>
+  <a href="https://lin.ee/xxxxxxxx" target="_blank" style="
+    display: inline-block;
+    background-color: #00c300;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  ">LINEで予約する</a>
+</div>
+
+
+    <div class="info-box">
+      <h2>会場地図（対面講座の場合）</h2>
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=..." allowfullscreen loading="lazy">地図を読み込んでいます…</iframe>
+    </div>
+  </section>
+</body>
+</html>
