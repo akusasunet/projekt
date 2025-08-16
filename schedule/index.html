@@ -1,1 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>活動予定 | Schedule</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Noto Sans JP', sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
 
+    header.hero {
+      background: linear-gradient(135deg, #43cea2, #185a9d);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header.hero h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    header.hero p {
+      font-size: 1.2em;
+      opacity: 0.9;
+    }
+
+    .section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .info-box,
+    .calendar-box {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      padding: 30px;
+      margin-bottom: 30px;
+    }
+
+    .info-box h2,
+    .calendar-box h2 {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+      color: #185a9d;
+    }
+
+    .info-box ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .info-box ul li {
+      margin-bottom: 10px;
+    }
+
+    .calendar-box a {
+      display: inline-block;
+      background-color: #00c300;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    @media (max-width: 600px) {
+      header.hero h1 {
+        font-size: 2em;
+      }
+
+      .info-box,
+      .calendar-box {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <h1>今月の活動予定</h1>
+    <p>講座・イベントのスケジュールをご確認ください。</p>
+  </header>
+
+  <section class="section">
+    <div class="info-box">
+      <h2>持ち物のご案内</h2>
+      <ul>
+        <li>💻 パソコン（ご自身のものを使用する場合）</li>
+        <li>📱 スマートフォン</li>
+        <li>💴 現金800円以上（参加費・教材費など）</li>
+        <li>🔐 スマホアプリ導入時に必要なID・パスワード</li>
+        <li>🖥️ パソコンのレンタルをご希望の方は事前にLINEで予約してください</li>
+      </ul>
+    </div>
+
+    <div class="calendar-box">
+      <h2>LINEで活動予定を確認</h2>
+      <p>LINE公式アカウントで最新の講座・イベント情報をご案内しています。以下のボタンからLINEにアクセスしてください。</p>
+      <a href="https://lin.ee/xxxxxxxx" target="_blank">LINEで予定を見る</a>
+    </div>
+  </section>
+</body>
+</html>
